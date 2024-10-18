@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ListeComponent } from './liste/liste.component';
 import { DetailsComponent } from './details/details.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AjouterComponent } from './ajouter/ajouter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ArticleComponent,
     ListeComponent,
     DetailsComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    AjouterComponent
   ],
   imports: [
     BrowserModule,
