@@ -17,23 +17,7 @@
 </nav>
 
 <!-- Contenu -->
-<div id="home" class="container">
-  <div id="alertMsg">
-    <p>
-      {{message}}
-    </p>
-  </div>
-  
-  <app-article 
-    *ngFor="let element of liste"
-    [titrearticle]="element.titrearticle" 
-    [prixArticle]="element.prixArticle" 
-    [description]="element.description"
-    [urlImg]="element.urlImg"
-    [dispo]="element.dispo"
-    (info)="onAffiche($event)">
-  </app-article>
-</div>
+<router-outlet></router-outlet>
 
 <!-- Pied de page -->
 <footer class="py-5 bg-dark">

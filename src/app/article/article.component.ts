@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ArticleComponent implements OnInit{
   //titrearticle: string = "Titre de l'article";
   //prixArticle: number = 12;
+  @Input() id: number = 0;
   @Input() titrearticle: string = "Titre de l'article";
   @Input() prixArticle: number = 12;
   @Input() textAltImg: string = "Titre alternative de l'image";
