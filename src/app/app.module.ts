@@ -5,11 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListeComponent } from './liste/liste.component';
 import { DetailsComponent } from './details/details.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AjouterComponent } from './ajouter/ajouter.component';
+import { Ajouter2Component } from './ajouter2/ajouter2.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,15 @@ import { AjouterComponent } from './ajouter/ajouter.component';
     ListeComponent,
     DetailsComponent,
     PagenotfoundComponent,
-    AjouterComponent
+    AjouterComponent,
+    Ajouter2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
